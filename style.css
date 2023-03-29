@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin-top: 7vh;
+    width: 32vw;
+    height: 85vh;
+    background-color: rgb(3, 159, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+}
+.item{
+    padding: 20px;
+    width: 28vw;
+    height: 80vh;
+}
+.buttons{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* font-size: rem; */
+}
+.easyBtn,.hardBtn{
+    font-size: 1.7rem;
+    width: 20vw;
+    height: 7.5vh;
+    border-radius: 15px;
+    background-color: dimgray;
+    color: white;
+    cursor: pointer;
+}
+.hardBtn:hover{
+    box-shadow: 0 0 5px white;
+    transition: 0.2s ease-in-out;
+    font-size: 1.75rem;
+    width: 20.4vw;
+    height: 7.6vh;
+}
+.easyBtn:hover{
+    box-shadow: 0 0 5px white;
+    transition: 0.2s ease-in-out;
+    font-size: 1.75rem;
+    width: 20.4vw;
+    height: 7.6vh;
+}
+.box img{
+    width: 26vw;
+    height: 40vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* game area */
+.gamearea{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+    font-size: 1.7rem;
+    width: 20vw;
+    height: 7.5vh;
+    display: flex;
+    border-radius: 15px;
+    background-color: dimgray;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 44px;
+}
+#start:hover{
+    box-shadow: 0 0 5px white;
+    transition: 0.2s ease-in-out;
+    font-size: 1.75rem;
+    width: 20.4vw;
+    height: 7.6vh;
+}
+.gamearea h1{
+    margin: 10px 0;
+}
+.gamearea .box{
+    padding: 20px;
+}
+#guess{
+    margin: 15px 0;
+    font-size: 1.6rem;
+    height: 8vh;
+    border-radius: 10px;
+    text-align: center;
+}
+#enter{
+    width: 6vw;
+    font-size: 1.6rem;
+    height: 8vh;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 4px;
+}
+#enter:hover{
+    box-shadow: 0 0 4px white;
+    transition: 0.1s ease-in;
+}
+.stats{
+    /* margin: 0 50px; */
+    margin-top: 30px;
+    font-size: 1.2rem;
+}

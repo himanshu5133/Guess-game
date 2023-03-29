@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing Game</title>
+</head>
+<body onload="init()">
+    <div class="container" id="container">
+        <div class="box">
+            <div class="item">
+                <h1>Guess the random number between 1-100</h1>
+                <img src="assets\guess_imgae.jpg" alt="This is game image">
+                <h2>Select difficulty</h2>
+                <div class="buttons">
+                <button class="easyBtn">Easy:10 Attempts</button>
+                <button class="hardBtn">Hard: 5 Attempts</button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- game area -->
+    <div class="gamearea" id="gamearea">
+        <div class="box"><div class="Header">
+            <button id="start" class="buttons">New Game</button>
+            <h1 id="note">Your Guess</h1>
+            <div class="input-box">
+                <input min=1 max=100 id="guess" type="text" placeholder="Enter your guess!!">
+                <button id="enter">Enter</button>
+            </div>
+            
+            <div class="stats">
+                <p>Number of previous Attempts</p>
+                <span id="attempts">0</span>
+                <p>Number of previous guesses</p>
+                <span id="guesses">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
