@@ -18,7 +18,7 @@ let win=false;
 
 const enterBtn=document.getElementById('enter');
 enterBtn.addEventListener('click',()=>{
-    if(i<n-1){
+    if(i<n){
         if(document.getElementById("guess").value!=""){
             const item = document.getElementById("guess");
             i++;
@@ -41,6 +41,20 @@ enterBtn.addEventListener('click',()=>{
             }
     }
     else{
+        if(win==true){
+            document.getElementById("start").style.display="flex";
+            document.getElementById("note").innerHTML=`<h1>You Won!!</h1>`
+            document.getElementById("attempts").innerHTML=`<p>${i}</p>`
+            let allNum="";
+            allNum+=userGuess[0];
+            for(let j=1;j<userGuess.length;j++){
+                allNum+=", "
+                allNum+=userGuess[j];
+            }
+        document.getElementById("guesses").innerHTML=allNum;
+        document.getElementById("guess").disabled=true;
+        }
+        else{
         document.getElementById("start").style.display="flex";
             document.getElementById("note").innerHTML=`<h1>You lost! correct number was ${randNum}</h1>`
             document.getElementById("attempts").innerHTML=`<p>${i}</p>`
@@ -53,6 +67,7 @@ enterBtn.addEventListener('click',()=>{
         document.getElementById("guesses").innerHTML=allNum;
         document.getElementById("guess").innerHTML="Game over!";
         document.getElementById("guess").disabled=true;
+        }
     }
 })
 document.getElementById("guess").addEventListener('keyup',(event)=>{
