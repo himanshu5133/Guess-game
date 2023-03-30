@@ -8,6 +8,9 @@
         width: 65vw;
         /* height: 100vh; */
     }
+    .item{
+        width: 60vw;
+    }
     .box{
         width: 65vw;
     }
